@@ -53,7 +53,7 @@ title: Companies
 <script type="text/javascript">
 function listCompanies()
     {
-    $.getJSON('/data/companies.json', function(data) {
+    $.getJSON('/data/companies-swagger-ui.json', function(data) {
         toggle = 0;
          $.each(data['company'], function(key, val) {
             var template = $('#companyListingTemplate').html();
