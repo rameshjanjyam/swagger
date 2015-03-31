@@ -53,6 +53,7 @@ title: Companies
 <script type="text/javascript">
 function listCompanies()
     {
+    console.log("hello");
     $.getJSON('/data/companies-platform-integration.json', function(data) {
         toggle = 0;
          $.each(data['company'], function(key, val) {
