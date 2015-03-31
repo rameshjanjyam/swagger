@@ -25,12 +25,13 @@ title: Companies
 {% raw  %}
 <script id="companyListingTemplate" type="text/template">       
     <tr>
-        <td align="left" valign="top">
+        <td align="center" width="150">
             <a href="{{website}}"><img src="{{logo}}" width="{{logo_width}}" align="left" style="padding: 15px;" /></a>
-            <p><a href="{{website}}" style="color: #000;"><strong>{{name}}</strong></a> (<a href="{{reference}}">reference</a>)</p>
-            <p>{{details}}</p>
         </td>
-    </tr>                                                                                                 
+        <td align="left">
+            <p><a href="{{website}}" style="color: #000;"><strong>{{name}}</strong></a> (<a href="{{reference}}">reference</a>)</p>
+        </td>
+    </tr>                                                                                                
 </script>
 {% endraw %}
 
