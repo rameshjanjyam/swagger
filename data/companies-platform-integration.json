@@ -459,8 +459,8 @@
 			"github": "https://github.com/opendaylight",
 			"blog": "http://www.opendaylight.org/blog",
 			"blogrss": "http://www.opendaylight.org/blog/feed",
-			"logo": "",
-			"logo_width": "125",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/opendaylight-logo.png",
+			"logo_width": "150",
 			"screenshot": null,
 			"tags": "Internet of Things,SDN,Smart Cities,Software Defined Networking"
 		},
@@ -699,7 +699,7 @@
 			"github": "",
 			"blog": "http://www.synapp.io/blog/",
 			"blogrss": "http://www.synapp.io/blog?format=RSS",
-			"logo": "",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/synapp-io-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
 			"tags": "Messaging"
@@ -731,7 +731,7 @@
 			"github": "",
 			"blog": "http://blogs.msdn.com/b/visualstudio/",
 			"blogrss": "http://blogs.msdn.com/b/visualstudio/rss.aspx",
-			"logo": "",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/visual-studio-2013-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
 			"tags": "IDE,Microsoft"
