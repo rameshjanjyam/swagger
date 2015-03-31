@@ -363,8 +363,8 @@
 		{
 			"id": "18635",
 			"name": "Neo4J",
-			"summary": "Neo4j is an open-source graph database, implemented in Java. The developers describe Neo4j as "embedded, disk-based, fully transactional Java persistence engine that stores data structured in graphs rather than in tables". Neo4j is the most popular graph database. Neo4j version 1.0 was released in February, 2010. The community edition of the database is licensed under the free GNU General Public L",
-			"details": "Neo4j is an open-source graph database, implemented in Java. The developers describe Neo4j as "embedded, disk-based, fully transactional Java persistence engine that stores data structured in graphs rather than in tables". Neo4j is the most popular graph database. Neo4j version 1.0 was released in February, 2010. The community edition of the database is licensed under the free GNU General Public License (GPL) v3. The additional modules, such as online backup and high availability, are licensed under the free Affero General Public License (AGPL) v3. The database, with the additional modules, is also available under a commercial license, in a dual license model.",
+			"summary": "Neo4j is an open-source graph database, implemented in Java. The developers describe Neo4j as embedded, disk-based, fully transactional Java persistence engine that stores data structured in graphs rather than in tables. Neo4j is the most popular graph database. Neo4j version 1.0 was released in February, 2010. The community edition of the database is licensed under the free GNU General Public Lic",
+			"details": "Neo4j is an open-source graph database, implemented in Java. The developers describe Neo4j as embedded, disk-based, fully transactional Java persistence engine that stores data structured in graphs rather than in tables. Neo4j is the most popular graph database. Neo4j version 1.0 was released in February, 2010. The community edition of the database is licensed under the free GNU General Public License (GPL) v3. The additional modules, such as online backup and high availability, are licensed under the free Affero General Public License (AGPL) v3. The database, with the additional modules, is also available under a commercial license, in a dual license model.",
 			"website": "http://neo4j.com/",
 			"twitter": "https://twitter.com/neo4j",
 			"github": "https://github.com/neo4j",
@@ -618,8 +618,8 @@
 		{
 			"id": "108",
 			"name": "SnapLogic",
-			"summary": "SnapLogic's modern web architecture, "containerized" Snaps, and thriving SnapStore ecosystem make it the only practical way to continually connect your company to the burgeoning number and diversity of data sources and cloud applications.",
-			"details": "SnapLogic's modern web architecture, "containerized" Snaps, and thriving SnapStore ecosystem make it the only practical way to continually connect your company to the burgeoning number and diversity of data sources and cloud applications.",
+			"summary": "SnapLogic's modern web architecture, containerized Snaps, and thriving SnapStore ecosystem make it the only practical way to continually connect your company to the burgeoning number and diversity of data sources and cloud applications.",
+			"details": "SnapLogic's modern web architecture, containerized Snaps, and thriving SnapStore ecosystem make it the only practical way to continually connect your company to the burgeoning number and diversity of data sources and cloud applications.",
 			"website": "http://www.snaplogic.com/",
 			"twitter": "https://twitter.com/snaplogic",
 			"github": "https://github.com/SnapLogic",
