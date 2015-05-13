@@ -207,8 +207,8 @@
 		{
 			"id": "18663",
 			"name": "Express",
-			"summary": false,
-			"details": "",
+			"summary": "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. With a myriad of HTTP utility methods and middleware at your disposal, creating a robust API is quick and easy.",
+			"details": "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. With a myriad of HTTP utility methods and middleware at your disposal, creating a robust API is quick and easy.",
 			"website": "http://expressjs.com/",
 			"reference": "http://github.com/krakenjs/swaggerize-express/",
 			"twitter": "",
@@ -530,8 +530,8 @@
 		{
 			"id": "18670",
 			"name": "Sinatra",
-			"summary": false,
-			"details": "",
+			"summary": "Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort.",
+			"details": "Sinatra is a DSL for quickly creating web applications in Ruby with minimal effort.",
 			"website": "http://www.sinatrarb.com/",
 			"reference": "http://github.com/jphastings/sinatra-swagger/",
 			"twitter": "",
