@@ -1,0 +1,148 @@
+{
+	"buildingblocks": [
+		{
+			"id": "987",
+			"name": "Converter",
+			"summary": "The conversion of an API definition from one format into another.",
+			"details": "The conversion of an API definition from one format into another.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-conversion.png",
+			"width": "100",
+			"tags": "",
+			"category": "Converter",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "988",
+			"name": "Generator",
+			"summary": "Generating an API definition format from an existing system or platform.",
+			"details": "Generating an API definition format from an existing system or platform.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-generate.png",
+			"width": "100",
+			"tags": "",
+			"category": "Generator",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "989",
+			"name": "Parser",
+			"summary": "Parses a machine readable API definition and makes ready for use in specific language, structure, or platform.",
+			"details": "Parses a machine readable API definition and makes ready for use in specific language, structure, or platform.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-parse.png",
+			"width": "100",
+			"tags": "",
+			"category": "Parser",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "990",
+			"name": "Schema",
+			"summary": "Produces a specific schema, from an existing template, in a particular API definition format.",
+			"details": "Produces a specific schema, from an existing template, in a particular API definition format.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-schema.png",
+			"width": "100",
+			"tags": "",
+			"category": "Schema",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "991",
+			"name": "Validator",
+			"summary": "Validates an API definition against its formal specification and schema, producing a valid or invalid response, with as much detail as possible.",
+			"details": "Validates an API definition against its formal specification and schema, producing a valid or invalid response, with as much detail as possible.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-valid.png",
+			"width": "100",
+			"tags": "",
+			"category": "Validator",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "992",
+			"name": "Server",
+			"summary": "The auto generation of server side code from a machine readable API definition.",
+			"details": "The auto generation of server side code from a machine readable API definition.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-code.png",
+			"width": "100",
+			"tags": "",
+			"category": "Server",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "993",
+			"name": "Client",
+			"summary": "The auto generation of client side code from a machine readable API definition format.",
+			"details": "The auto generation of client side code from a machine readable API definition format.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-code.png",
+			"width": "100",
+			"tags": "",
+			"category": "Client",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "994",
+			"name": "Command-Line",
+			"summary": "The usage of machine readable API definitions at the command line.",
+			"details": "The usage of machine readable API definitions at the command line.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-command-line.png",
+			"width": "100",
+			"tags": "",
+			"category": "Command-Line",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "995",
+			"name": "Powershell",
+			"summary": "The usage of machine readable API definitions via the powershell interface.",
+			"details": "The usage of machine readable API definitions via the powershell interface.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-command-line.png",
+			"width": "100",
+			"tags": "",
+			"category": "Powershell",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "996",
+			"name": "Proxy",
+			"summary": "Generation and configuration of a proxy from a machine readable API definition.",
+			"details": "Generation and configuration of a proxy from a machine readable API definition.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-proxy.png",
+			"width": "100",
+			"tags": "",
+			"category": "Proxy",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "997",
+			"name": "Aggregator",
+			"summary": "Aggregation of APIs using a machine readable API definition format.",
+			"details": "Aggregation of APIs using a machine readable API definition format.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-arrow-aggregate.png",
+			"width": "100",
+			"tags": "",
+			"category": "Aggregator",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "998",
+			"name": "Tester",
+			"summary": "Generating, providing, and configuring API testing using machine readable API definition formats.",
+			"details": "Generating, providing, and configuring API testing using machine readable API definition formats.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-authentication-test.png",
+			"width": "100",
+			"tags": "",
+			"category": "Tester",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "999",
+			"name": "Visualization",
+			"summary": "Generating a visualization from the meta data, or resources made available via a machine readable API definition.",
+			"details": "Generating a visualization from the meta data, or resources made available via a machine readable API definition.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-visualization.png",
+			"width": "100",
+			"tags": "",
+			"category": "Visualization",
+			"categoryslug": "api-definition"
+		}
+	],
+	"published": "05/13/2015"
+}
