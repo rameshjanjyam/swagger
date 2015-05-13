@@ -19,8 +19,8 @@ title: Companies
     <li>{"<a href="https://apievangelist.3scale.net/docs" title="API" target="_blank">API</a>"}</li>
 </ul>
 
-<h1 class="title">Platform Integrations</h1>
-<p>These are the platforms I'm finding that have directly integrated Swagger into their operations.</p>
+<h1 class="title">External Integrations</h1>
+<p>These are the frameworks, tooling, and other open source projects that I've found users applying Swagger in various ways to assist them in their work. If you know of any that I am missing, <a href="https://github.com/kinlane/swagger/issues/new?title=Submit%20New%20Swagger%20External%20Integration&body=">please submit as Github issue on this Swagger research project</a>.</p>
 <p><br /></p>
 {% raw  %}
 <script id="companyListingTemplate" type="text/template">       
@@ -65,7 +65,6 @@ title: Companies
 <script type="text/javascript">
 function listCompanies()
     {
-    console.log("hello");
     $.getJSON('/data/companies-external-integration.json', function(data) {
         toggle = 0;
          $.each(data['company'], function(key, val) {
