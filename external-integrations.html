@@ -21,7 +21,13 @@ title: Companies
 
 <h1 class="title">External Integrations</h1>
 <p>These are the frameworks, tooling, and other open source projects that I've found users applying Swagger in various ways to assist them in their work. If you know of any that I am missing, <a href="https://github.com/kinlane/swagger/issues/new?title=Submit%20New%20Swagger%20External%20Integration&body=">please submit as Github issue on this Swagger research project</a>.</p>
-<p><br /></p>
+<center>
+<table cellpadding="5" align="center">
+	<tr>
+		 <td id="summary-count" style="font-size: 18px; font-weight: bold; padding-bottom: 10px; text-align:center;"></td>
+	</tr>
+</table>
+</center>
 {% raw  %}
 <script id="companyListingTemplate" type="text/template">       
     <tr>
@@ -67,6 +73,10 @@ function listCompanies()
     {
     $.getJSON('/data/companies-external-integration.json', function(data) {
         toggle = 0;
+        
+	     companycount = data['company'].length;
+	     document.getElementById("summary-count").innerHTML = 'there are ' + companycount + ' current integrations that I am tracking on ';	    	 	                       
+        
          $.each(data['company'], function(key, val) {
             var template = $('#companyListingTemplate').html();
             var html = Mustache.to_html(template, val);

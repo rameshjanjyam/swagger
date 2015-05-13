@@ -76,7 +76,7 @@ function listCompanies()
         toggle = 0;
         
 	     companycount = data['company'].length;
-	     document.getElementById("summary-count").innerHTML = 'there are ' + companycount + ' current integrations ';	    	 	        
+	     document.getElementById("summary-count").innerHTML = 'there are ' + companycount + ' current integrations that I am tracking on ';	    	 	        
         
          $.each(data['company'], function(key, val) {
             var template = $('#companyListingTemplate').html();
