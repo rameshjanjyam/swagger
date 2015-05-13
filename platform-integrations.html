@@ -22,6 +22,13 @@ title: Companies
 <h1 class="title">Platform Integrations</h1>
 <p>These are the platforms I'm finding that have directly integrated Swagger into their operations. If you know of any that I am missing, <a href="https://github.com/kinlane/swagger/issues/new?title=Submit%20New%20Swagger%20Platform%20Integration&body=">please submit as Github issue on this Swagger research project</a>.</p>
 <p><br /></p>
+<center>
+<table cellpadding="5" align="center">
+	<tr>
+		 <td width="55%" align="right" id="summary-count" style="font-size: 14px; font-weight: bold; padding-bottom: 10px;"></td>
+	</tr>
+</table>
+</center>
 {% raw  %}
 <script id="companyListingTemplate" type="text/template">       
     <tr>
@@ -68,6 +75,10 @@ function listCompanies()
     console.log("hello");
     $.getJSON('/data/companies-platform-integration.json', function(data) {
         toggle = 0;
+        
+	     companycount = data['company'].length;
+	     document.getElementById("summary-count").innerHTML = 'there are ' + companycount + ' current integrations ';	    	 	        
+        
          $.each(data['company'], function(key, val) {
             var template = $('#companyListingTemplate').html();
             var html = Mustache.to_html(template, val);
