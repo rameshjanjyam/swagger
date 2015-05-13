@@ -70,37 +70,32 @@ function listCompanies()
          $.each(data['company'], function(key, val) {
             var template = $('#companyListingTemplate').html();
             var html = Mustache.to_html(template, val);
-            $('#companyListing').append(html);  
-             
+            $('#companyListing').append(html);               
             
-	            company = val['name'];             
-	            tags = val['tags'];	
-	            id = val['id'];
-	            website = val['website'];	
-            		
-	            var template = $('#companyListingTemplate').html();
-	            var html = Mustache.to_html(template, val);
-	            $('#' + slug).append(html);   		            		
-	            
-	            if(website.length>0){ document.getElementById("home-logo-link-"+id).href=website; }               
-	            if(website.length>0){ document.getElementById("home-name-link-"+id).href=website; }              
-	            if(website.length>0){ document.getElementById("home-icon-"+id).href=website; } else { document.getElementById("home-icon-img-"+id).style.display='none'; }              
-	                                    
-	            blog = val['blog'];
-	            if(blog.length>0){ document.getElementById("blog-icon-"+id).href=blog; } else { document.getElementById("blog-icon-img-"+id).style.display='none'; }
-	                            
-	            blogrss = val['blogrss'];
-	            if(blog.length>0){ document.getElementById("blogrss-icon-"+id).href=blogrss; } else { document.getElementById("blogrss-icon-img-"+id).style.display='none'; }
-	            
-	            twitter = val['twitter'];
-	            if(twitter.length>0){ document.getElementById("twitter-icon-"+id).href=twitter; } else { document.getElementById("twitter-icon-img-"+id).style.display='none'; }
-	            
-	            github = val['github'];
-	            if(github.length>0){ document.getElementById("github-icon-"+id).href=github; } else { document.getElementById("github-icon-img-"+id).style.display='none'; }
-        			
-	            apisjson = val['apisjson'];
-            	if(apisjson.length>0){ document.getElementById("apisjson-icon-"+id).href = '/apis-json-viewer.html?apisjson='+apisjson; } else { document.getElementById("apisjson-icon-img-"+id).style.display='none'; }            
+            company = val['name'];             
+            tags = val['tags'];	
+            id = val['id'];
+            website = val['website'];	        		            		
+            
+            if(website.length>0){ document.getElementById("home-logo-link-"+id).href=website; }               
+            if(website.length>0){ document.getElementById("home-name-link-"+id).href=website; }              
+            if(website.length>0){ document.getElementById("home-icon-"+id).href=website; } else { document.getElementById("home-icon-img-"+id).style.display='none'; }              
+                                    
+            blog = val['blog'];
+            if(blog.length>0){ document.getElementById("blog-icon-"+id).href=blog; } else { document.getElementById("blog-icon-img-"+id).style.display='none'; }
                             
+            blogrss = val['blogrss'];
+            if(blog.length>0){ document.getElementById("blogrss-icon-"+id).href=blogrss; } else { document.getElementById("blogrss-icon-img-"+id).style.display='none'; }
+            
+            twitter = val['twitter'];
+            if(twitter.length>0){ document.getElementById("twitter-icon-"+id).href=twitter; } else { document.getElementById("twitter-icon-img-"+id).style.display='none'; }
+            
+            github = val['github'];
+            if(github.length>0){ document.getElementById("github-icon-"+id).href=github; } else { document.getElementById("github-icon-img-"+id).style.display='none'; }
+    			
+            apisjson = val['apisjson'];
+        	if(apisjson.length>0){ document.getElementById("apisjson-icon-"+id).href = '/apis-json-viewer.html?apisjson='+apisjson; } else { document.getElementById("apisjson-icon-img-"+id).style.display='none'; }            
+                        
             });
         });
     } 
