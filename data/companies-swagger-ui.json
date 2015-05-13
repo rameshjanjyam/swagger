@@ -1,22 +1,6 @@
 {
 	"company": [
 		{
-			"id": "18647",
-			"name": " World Population Project",
-			"summary": "Population.io aims to make demography &ndash; the study of human populations &ndash; accessible to a wider audience. We believe that demographic data can play an important role in understanding the social and economic developments of our time. Our hope is that people from all walks of life, in all ages and across all countries will explore a new perspective of their own life and find their own pla",
-			"details": "Population.io aims to make demography &ndash; the study of human populations &ndash; accessible to a wider audience. We believe that demographic data can play an important role in understanding the social and economic developments of our time. Our hope is that people from all walks of life, in all ages and across all countries will explore a new perspective of their own life and find their own place in the world of today and tomorrow.",
-			"website": "http://population.io/",
-			"reference": "http://api.population.io/",
-			"twitter": "",
-			"github": "",
-			"blog": "",
-			"blogrss": "",
-			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/world-population-project.png",
-			"logo_width": "150",
-			"screenshot": null,
-			"tags": "Population"
-		},
-		{
 			"id": "4",
 			"name": "3scale",
 			"summary": "3Scale provides plug-and-play as well as enterprise level API management services. 3Scale is similar to 3Scale connect is a starter platform with a freemium model for delivering your API. You can deploy at no cost, and pay-as-you-go based upon the volume of calls made on your API. This model is well suited to those who are not sure of their API business model or target audience &mdash; or are just",
@@ -30,7 +14,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/serviceproviders/3scale-logo.jpg",
 			"logo_width": "275",
 			"screenshot": "http://kinlane-productions.s3.amazonaws.com/ap-evangelist-site/api/screenshots/3287_3scale_service_management.png",
-			"tags": "API Management"
+			"tags": "API Management,API-Management-Stack,Stack-API-Management"
 		},
 		{
 			"id": "18609",
@@ -46,7 +30,23 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/ACI_Scholarly_Blog_Index.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Blog"
+			"tags": "Blog,Content-Stack,Stack-Content"
+		},
+		{
+			"id": "335",
+			"name": "AMEE Developers",
+			"summary": "At amee, we provide clear actionable insight into the environmental costs and risks associated with core business and supply chain operations.Through our unique ameescore, available on every UK firm, businesses can translate environmental data into tangible risks, cost savings and improvements. The ameescore enables businesses to re-envision their supply chain and their own performance in the cont",
+			"details": "At amee, we provide clear actionable insight into the environmental costs and risks associated with core business and supply chain operations.Through our unique ameescore, available on every UK firm, businesses can translate environmental data into tangible risks, cost savings and improvements. The ameescore enables businesses to re-envision their supply chain and their own performance in the context of their peers and identify opportunities for tangible change. For the first time, UK businesses have an effective means to treat environmental data with the same transparency, consistency and detail as financial data to drive bottom line improvements and mitigate risks.",
+			"website": "http://www.amee.com/developer/",
+			"reference": "https://www.amee.com/api#/!/nd_gain",
+			"twitter": "https://twitter.com/ameedev",
+			"github": "https://github.com/AMEE",
+			"blog": "http://www.amee.com/blog/",
+			"blogrss": "http://blog.amee.com/feed/",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/335_logo.png",
+			"logo_width": "150",
+			"screenshot": "http://kinlane-productions.s3.amazonaws.com/ap-evangelist-site/api/screenshots/195_amee.png",
+			"tags": "Carbon,Cleantech,Cleanweb,Climate,Environment,Environment-Stack,Green"
 		},
 		{
 			"id": "11409",
@@ -81,10 +81,26 @@
 			"tags": "Aggregation,Commerce-Stack,E-commerce,Shopping Cart"
 		},
 		{
-			"id": "18610",
-			"name": "AppSpin",
+			"id": "18718",
+			"name": "apidaze.io",
 			"summary": false,
 			"details": "",
+			"website": "http://apidaze.io",
+			"reference": "https://developers.apidaze.io/docs",
+			"twitter": "https://twitter.com/apidaze",
+			"github": "",
+			"blog": "",
+			"blogrss": "",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apidaze-logo.jpg",
+			"logo_width": "150",
+			"screenshot": null,
+			"tags": "Telecom,Telephony-Stack,Voice-Stack,Webrtc"
+		},
+		{
+			"id": "18610",
+			"name": "AppSpin",
+			"summary": "Avoid the headache of building, managing and optimizing the infrastructure required to create a referral program for your mobile app. AppSpin makes it simple to implement the most powerful marketing tactic for generating real social growth.",
+			"details": "Avoid the headache of building, managing and optimizing the infrastructure required to create a referral program for your mobile app. AppSpin makes it simple to implement the most powerful marketing tactic for generating real social growth.",
 			"website": "http://appsp.in/",
 			"reference": "http://docs.appsp.in/",
 			"twitter": "",
@@ -94,7 +110,23 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/appspin_100.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": ""
+			"tags": "Marketing-Stack"
+		},
+		{
+			"id": "18709",
+			"name": "Audiosear.ch",
+			"summary": "At Audiosear.ch, we're building the web's most comprehensive source of data about podcasts and radio. We transform sound into information and synthesize thousands of data points from around the web to generate intelligence for spoken word audio. Audiosear.ch's smart audio recommendations can be broken down by show, network, category, topic, and more. The result: a smart engine for audio stories to",
+			"details": "At Audiosear.ch, we're building the web's most comprehensive source of data about podcasts and radio. We transform sound into information and synthesize thousands of data points from around the web to generate intelligence for spoken word audio. Audiosear.ch's smart audio recommendations can be broken down by show, network, category, topic, and more. The result: a smart engine for audio stories to power search and recommendation for your app.",
+			"website": "https://www.audiosear.ch/",
+			"reference": "https://www.audiosear.ch/developer/api-docs/v1/api-docs.json",
+			"twitter": "https://twitter.com/audiosearchfm",
+			"github": "",
+			"blog": "",
+			"blogrss": "",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/audiosear-ch-logo.png",
+			"logo_width": "150",
+			"screenshot": null,
+			"tags": "Audio,Podcast"
 		},
 		{
 			"id": "548",
@@ -126,13 +158,13 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/betisn-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": ""
+			"tags": "Gambling-Stack"
 		},
 		{
 			"id": "18613",
 			"name": "Bitdango",
-			"summary": false,
-			"details": "",
+			"summary": "Bitdango tracks hundreds of digital currency markets around the world. Bitdango brings market details (tickers, order books, etc) together into actionable views. Market prices are constantly updated around the clock, making Bitdango your single stop for current market prices. Use Bitdango to support your most advanced charting and market analysis needs.",
+			"details": "Bitdango tracks hundreds of digital currency markets around the world. Bitdango brings market details (tickers, order books, etc) together into actionable views. Market prices are constantly updated around the clock, making Bitdango your single stop for current market prices. Use Bitdango to support your most advanced charting and market analysis needs.",
 			"website": "https://bitdango.com/",
 			"reference": "https://bitdango.com/api",
 			"twitter": "",
@@ -142,7 +174,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitdango-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Currency"
+			"tags": "Currency,Currency-Stack"
 		},
 		{
 			"id": "18614",
@@ -158,13 +190,13 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/BitTitan_100.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Cloud Computing"
+			"tags": "Cloud Computing,Cloud-Computing-Stack"
 		},
 		{
 			"id": "11768",
 			"name": "CallFire",
-			"summary": false,
-			"details": "",
+			"summary": "CallFire is a cloud-based telephony company that provides voice and text connectivity services. It offers the necessary tools for businesses to communicate and market effectively. The company works to provide a diverse line of innovative products that enable its users to get their messages delivered.",
+			"details": "CallFire is a cloud-based telephony company that provides voice and text connectivity services. It offers the necessary tools for businesses to communicate and market effectively. The company works to provide a diverse line of innovative products that enable its users to get their messages delivered.",
 			"website": "http://www.callfire.com",
 			"reference": "https://www.callfire.com/api-documentation/rest/version/1.1",
 			"twitter": "https://twitter.com/CallFire",
@@ -190,7 +222,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/carnival-logo-small.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Agency,Mobile"
+			"tags": "Agency,Marketing-Stack,Mobile"
 		},
 		{
 			"id": "18616",
@@ -302,7 +334,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/commafeed-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Blog,Feed,RSS"
+			"tags": "Blog,Feed,Feed-Stack,RSS"
 		},
 		{
 			"id": "2644",
@@ -334,7 +366,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-validation-api.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Email"
+			"tags": "Data-Stack,Email"
 		},
 		{
 			"id": "11516",
@@ -398,7 +430,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/evercam-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": ""
+			"tags": "Camera-Stack"
 		},
 		{
 			"id": "195",
@@ -430,7 +462,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/logo3.png",
 			"logo_width": "150",
 			"screenshot": "http://kinlane-productions.s3.amazonaws.com/ap-evangelist-site/api/screenshots/3715_fanart.tv_tv.png",
-			"tags": "Art,Art-Stack,Arts,Entertainment,Fan,Images,Images,Media,Movies,Photos,Television"
+			"tags": "Art,Art-Stack,Arts,Entertainment,Fan,Images,Images,Media,Movies,Photos,Television,Television-Stack"
 		},
 		{
 			"id": "18617",
@@ -462,7 +494,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/GeoTrellis-Transit-Logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Transit,Transportation"
+			"tags": "Transit,Transportation,Transportation-Stack"
 		},
 		{
 			"id": "1013",
@@ -494,7 +526,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/1066_logo.png",
 			"logo_width": "150",
 			"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/api/groupdocs-screenshot.png",
-			"tags": "Documents,File-sharing,Management,Notifications"
+			"tags": "Document-Stack,Documents,File-sharing,Management,Notifications"
 		},
 		{
 			"id": "18625",
@@ -510,13 +542,13 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/guru-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Collaboration"
+			"tags": "Collaboration,Collaboration-Stack"
 		},
 		{
 			"id": "18623",
 			"name": "HabitRPG",
-			"summary": false,
-			"details": "",
+			"summary": "HabitRPG is a free habit building and productivity app that treats your real life like a game. With in-game rewards and punishments to motivate you and a strong social network to inspire you, HabitRPG can help you achieve your goals to become healthy, hard-working, and happy.",
+			"details": "HabitRPG is a free habit building and productivity app that treats your real life like a game. With in-game rewards and punishments to motivate you and a strong social network to inspire you, HabitRPG can help you achieve your goals to become healthy, hard-working, and happy.",
 			"website": "https://habitrpg.com",
 			"reference": "https://habitrpg.com/static/api",
 			"twitter": "",
@@ -526,7 +558,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/habitrpg_pixel.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Gaming,Tasks"
+			"tags": "Gaming,Task-Stack,Tasks"
 		},
 		{
 			"id": "18627",
@@ -542,7 +574,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/hapi-js-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "BaaS,Framework"
+			"tags": "Application-Stack,BaaS,Framework"
 		},
 		{
 			"id": "11791",
@@ -558,7 +590,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/kubernetes-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Containers,Google"
+			"tags": "Container-Stack,Containers,Google"
 		},
 		{
 			"id": "18628",
@@ -574,13 +606,13 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/League_of_legends_logo_transparent.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Games,Gaming"
+			"tags": "Games,Gaming,Gaming-Stack"
 		},
 		{
 			"id": "18649",
 			"name": "League of Legends eSports",
-			"summary": false,
-			"details": "",
+			"summary": "LoL esports represents professional League of Legends on a global scale. Primarily it includes the five major professional leagues from around the globe.",
+			"details": "LoL esports represents professional League of Legends on a global scale. Primarily it includes the five major professional leagues from around the globe.",
 			"website": "http://na.lolesports.com/",
 			"reference": "http://na.lolesports.com/api/swagger",
 			"twitter": "",
@@ -590,7 +622,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/league-of-legends-esports.jpeg",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Games,Gaming,Sports"
+			"tags": "Games,Gaming,Gaming-Stack,Sports"
 		},
 		{
 			"id": "18629",
@@ -606,13 +638,13 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/likibu-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": ""
+			"tags": "Travel-Stack,Vacation-Stack"
 		},
 		{
 			"id": "18630",
 			"name": "Mobovivo",
-			"summary": false,
-			"details": "",
+			"summary": "Mobovivo is a team of TV producers and talented software engineers that turn the TV industries biggest threat - mobile devices pulling audiences away from TV - into their greatest asset - advertising revenue. Mobovivo Second Screen and Social TV platform supports over 100 million interactions / minute for companies like ESPN, TWC and Intel enabling TV viewers to engage with shows across multiple s",
+			"details": "Mobovivo is a team of TV producers and talented software engineers that turn the TV industries biggest threat - mobile devices pulling audiences away from TV - into their greatest asset - advertising revenue. Mobovivo Second Screen and Social TV platform supports over 100 million interactions / minute for companies like ESPN, TWC and Intel enabling TV viewers to engage with shows across multiple screens.",
 			"website": "http://www.mobovivo.com/",
 			"reference": "http://swagger-intel.mobovivo.com/",
 			"twitter": "https://twitter.com/mobovivo",
@@ -622,7 +654,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Mobovivo_Logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Television"
+			"tags": "Television,Television-Stack"
 		},
 		{
 			"id": "18636",
@@ -638,7 +670,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/mozilla-open-badges-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Badges,Certifiction"
+			"tags": "Badge-Stack,Badges,Certifiction"
 		},
 		{
 			"id": "18631",
@@ -654,13 +686,13 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/muckrock_medium.jpg",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Federal Government,FOIA"
+			"tags": "Federal Government,FOIA,News-Stack"
 		},
 		{
 			"id": "18634",
 			"name": "MyFox",
-			"summary": false,
-			"details": "",
+			"summary": "Myfox provides you the peace of mind you deserve through an innovative smart home security system that deters rather that simply detecting danger. Because everyone understands that protecting properties and people is about avoiding dangers rather than simply detecting them as they happen, Myfox innovates easy-to-use smart home security systems that redefine true security through proactive deterren",
+			"details": "Myfox provides you the peace of mind you deserve through an innovative smart home security system that deters rather that simply detecting danger. Because everyone understands that protecting properties and people is about avoiding dangers rather than simply detecting them as they happen, Myfox innovates easy-to-use smart home security systems that redefine true security through proactive deterrence, giving you the peace of mind that comes from knowing that your possessions are safe.",
 			"website": "https://www.getmyfox.com",
 			"reference": "https://api.myfox.me/dev/documentation",
 			"twitter": "https://twitter.com/getmyfox",
@@ -670,7 +702,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/myfox-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Home,Security"
+			"tags": "Home,Home-Stack,Security"
 		},
 		{
 			"id": "18633",
@@ -691,8 +723,8 @@
 		{
 			"id": "18632",
 			"name": "MySMS",
-			"summary": false,
-			"details": "",
+			"summary": "mysms is a cross-platform texting app which allows you to send and receive text messages from a computer or tablet just like on your smartphone. Messages are synced in realtime and available via any of your devices.",
+			"details": "mysms is a cross-platform texting app which allows you to send and receive text messages from a computer or tablet just like on your smartphone. Messages are synced in realtime and available via any of your devices.",
 			"website": "http://www.mysms.com/",
 			"reference": "https://api.mysms.com/swagger/",
 			"twitter": "https://twitter.com/mysms",
@@ -702,7 +734,23 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/mysms-logo.jpg",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "SMS"
+			"tags": "Messaging-Stack,SMS"
+		},
+		{
+			"id": "18700",
+			"name": "OpenAura",
+			"summary": "OpenAura is an artist identity platform. We provide tools for artists to manage their identity and an API for developers to intelligently navigate our comprehensive database of curated artist data and visual content.",
+			"details": "OpenAura is an artist identity platform. We provide tools for artists to manage their identity and an API for developers to intelligently navigate our comprehensive database of curated artist data and visual content.",
+			"website": "http://openaura.com",
+			"reference": "http://developer.openaura.com/docs/",
+			"twitter": "http://www.twitter.com/openaura",
+			"github": "https://github.com/openaura",
+			"blog": "",
+			"blogrss": "",
+			"logo": "",
+			"logo_width": "150",
+			"screenshot": null,
+			"tags": "Music-Stack"
 		},
 		{
 			"id": "18637",
@@ -718,7 +766,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/pingup-logo-horizontal-preview.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Booking,Scheduling"
+			"tags": "Booking,Scheduling,Scheduling-Stack"
 		},
 		{
 			"id": "3371",
@@ -750,7 +798,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Project-Chronos-Logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "NASA,Space"
+			"tags": "NASA,Space,Space-Stack"
 		},
 		{
 			"id": "18639",
@@ -766,7 +814,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/ptisp-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Domains,Hosting,ISP,Networking"
+			"tags": "Domain-Stack,Domains,Hosting,ISP,Networking"
 		},
 		{
 			"id": "1469",
@@ -782,7 +830,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/puppet-labs-logo.png",
 			"logo_width": "150",
 			"screenshot": "http://kinlane-productions.s3.amazonaws.com/ap-evangelist-site/api/screenshots/8105_puppetlabs.png",
-			"tags": "Automation,Cloud Computing,Security,Utility"
+			"tags": "Automation,Cloud Computing,Cloud-Stack,Security,Utility"
 		},
 		{
 			"id": "18640",
@@ -798,7 +846,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/qi-bench.jpg",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Healthcare,Medical Imaging"
+			"tags": "Healthcare,Healthcare-Stack,Medical Imaging"
 		},
 		{
 			"id": "241",
@@ -830,7 +878,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/reliefweb-logo.jpg",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Crisis,Humanitarian,Relief"
+			"tags": "Crisis,Humanitarian,Humanitarian-Stack,Relief"
 		},
 		{
 			"id": "924",
@@ -846,7 +894,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/924_logo.png",
 			"logo_width": "150",
 			"screenshot": "http://kinlane-productions.s3.amazonaws.com/ap-evangelist-site/api/screenshots/4465_sensr.net.png",
-			"tags": "Devices,H264,Internet of Things,IP-Camera,Monitoring,Sensors,Video,Webcam"
+			"tags": "Devices,H264,Internet of Things,Internet-of-Things-Stack,IP-Camera,Monitoring,Sensors,Video,Webcam"
 		},
 		{
 			"id": "480",
@@ -862,7 +910,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/480_logo.png",
 			"logo_width": "150",
 			"screenshot": "http://kinlane-productions.s3.amazonaws.com/ap-evangelist-site/api/screenshots/1550_shoeboxed.png",
-			"tags": "Bookkeeping,Documents,Enterprise,Finance,SaaS"
+			"tags": "Accounting-Stack,Bookkeeping,Documents,Enterprise,Finance,SaaS"
 		},
 		{
 			"id": "933",
@@ -878,7 +926,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/933_logo.png",
 			"logo_width": "150",
 			"screenshot": "http://kinlane-productions.s3.amazonaws.com/ap-evangelist-site/api/screenshots/4509_skimlinks.png",
-			"tags": "Affiliate,Affiliate Network,Affiliates,JavaScript,Links,Shopping"
+			"tags": "Affiliate,Affiliate Network,Affiliates,JavaScript,Link-Stack,Links,Shopping"
 		},
 		{
 			"id": "2726",
@@ -910,7 +958,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/tadaweb-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "API Aggregation,API Reciprocity"
+			"tags": "API Aggregation,API Reciprocity,Business-Intelligence-Stack"
 		},
 		{
 			"id": "18644",
@@ -926,7 +974,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Taxamo_logo-copy.jpg",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "EU,Taxes,VAT"
+			"tags": "Tax-Stack,Taxes,VAT"
 		},
 		{
 			"id": "18643",
@@ -942,7 +990,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/resumator-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Resume"
+			"tags": "Resume,Resume-Stack"
 		},
 		{
 			"id": "18646",
@@ -958,7 +1006,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/uk-commission-for-employment-and-skills.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": ""
+			"tags": "Employment-Stack"
 		},
 		{
 			"id": "2708",
@@ -977,6 +1025,22 @@
 			"tags": "Content,Dictionary,Dictionary-Stack"
 		},
 		{
+			"id": "18647",
+			"name": "World Population Project",
+			"summary": "Population.io aims to make demography &ndash; the study of human populations &ndash; accessible to a wider audience. We believe that demographic data can play an important role in understanding the social and economic developments of our time. Our hope is that people from all walks of life, in all ages and across all countries will explore a new perspective of their own life and find their own pla",
+			"details": "Population.io aims to make demography &ndash; the study of human populations &ndash; accessible to a wider audience. We believe that demographic data can play an important role in understanding the social and economic developments of our time. Our hope is that people from all walks of life, in all ages and across all countries will explore a new perspective of their own life and find their own place in the world of today and tomorrow.",
+			"website": "http://population.io/",
+			"reference": "http://api.population.io/",
+			"twitter": "",
+			"github": "",
+			"blog": "",
+			"blogrss": "",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/world-population-project.png",
+			"logo_width": "150",
+			"screenshot": null,
+			"tags": "Population,Population-Stack,Stack-Population"
+		},
+		{
 			"id": "18648",
 			"name": "YunoHost",
 			"summary": "YunoHost is a server operating system aiming to make self-hosting accessible to everyone.",
@@ -990,8 +1054,8 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/YunoHost-Logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Hosting"
+			"tags": "Hosting,Hosting-Stack"
 		}
 	],
-	"published": "03/30/2015"
+	"published": "05/13/2015"
 }
