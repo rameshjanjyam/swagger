@@ -15,15 +15,14 @@ title: Companies
 </style>
 
 <ul class="toolbar">
-    <li>{"<a href="https://raw.github.com/kinlane/swagger/gh-pages/data/companies-swagger-ui.json" title="JSON" target="_blank">JSON</a>"}</li>
+    <li>{"<a href="https://raw.github.com/kinlane/swagger/gh-pages/data/companies-platform-integration.json" title="JSON" target="_blank">JSON</a>"}</li>
     <li>{"<a href="https://apievangelist.3scale.net/docs" title="API" target="_blank">API</a>"}</li>
 </ul>
 
-<h1 class="title">Swagger UI</h1>
-<p>These are the APIs I'm tracking on that use Swagger for their interactive documentation.</p>
+<h1 class="title">Platform Integrations</h1>
+<p>These are the platforms I'm finding that have directly integrated Swagger into their operations.</p>
 <p><br /></p>
 {% raw  %}
-<script id="companyListingTemplate" type="text/template">       
 <script id="companyListingTemplate" type="text/template">       
     <tr>
         <td align="left" valign="top" colspan="2">
@@ -58,7 +57,6 @@ title: Companies
     <tr>
         <td colspan="2"><hr /></td>
     </tr>                                                                                               
-</script>                                                                                                
 </script>
 {% endraw %}
 
@@ -67,21 +65,18 @@ title: Companies
 <script type="text/javascript">
 function listCompanies()
     {
-     console.log("hello");	
+    console.log("hello");
     $.getJSON('/data/companies-swagger-ui.json', function(data) {
         toggle = 0;
          $.each(data['company'], function(key, val) {
             var template = $('#companyListingTemplate').html();
             var html = Mustache.to_html(template, val);
-            $('#companyListing').append(html); 
-            
+            $('#companyListing').append(html);               
             
             company = val['name'];             
             tags = val['tags'];	
             id = val['id'];
-            website = val['website'];
-            
-            console.log(website);	        		            		
+            website = val['website'];	        		            		
             
             if(website.length>0){ document.getElementById("home-logo-link-"+id).href=website; }               
             if(website.length>0){ document.getElementById("home-name-link-"+id).href=website; }              
@@ -100,8 +95,8 @@ function listCompanies()
             if(github.length>0){ document.getElementById("github-icon-"+id).href=github; } else { document.getElementById("github-icon-img-"+id).style.display='none'; }
     			
             apisjson = val['apisjson'];
-        	if(apisjson.length>0){ document.getElementById("apisjson-icon-"+id).href = '/apis-json-viewer.html?apisjson='+apisjson; } else { document.getElementById("apisjson-icon-img-"+id).style.display='none'; }                                      
-                                  
+        	if(apisjson.length>0){ document.getElementById("apisjson-icon-"+id).href = '/apis-json-viewer.html?apisjson='+apisjson; } else { document.getElementById("apisjson-icon-img-"+id).style.display='none'; }            
+                        
             });
         });
     } 
