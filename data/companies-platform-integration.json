@@ -69,6 +69,23 @@
 			"tags": "Apache,API Reciprocity,DSL"
 		},
 		{
+			"id": "2378",
+			"name": "API Science",
+			"summary": "New API tools for developers created by ProgrammableWeb founder John Musser.",
+			"details": "New API tools for developers created by ProgrammableWeb founder John Musser.",
+			"website": "http://www.apiscience.com/",
+			"reference": "http://swagger.apiscience.com/",
+			"twitter": "https://twitter.com/APIScience",
+			"github": "",
+			"apisjson": "",
+			"blog": "",
+			"blogrss": "",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/api-science-logo.png",
+			"logo_width": "150",
+			"screenshot": null,
+			"tags": "API Integration,API Monitoring"
+		},
+		{
 			"id": "3",
 			"name": "Apigee",
 			"summary": "Apigee is a provider of API technology and services for enterprises and developers. Providing a range of solutions from entry level tools for exploring APIs with a console and navigating OAuth, to enterprise tools for managing OAuth, Keys and platform for driving developer adoption while understanding usage, managing traffic and scaling an API platform. Apigee provides solutions for enterprises li",
@@ -662,6 +679,23 @@
 			"logo_width": "225",
 			"screenshot": null,
 			"tags": "API Management,API-Deployment,API-Deployment,Spreadsheets"
+		},
+		{
+			"id": "1752",
+			"name": "Runscope",
+			"summary": "Runscope was started with the idea that depending on a web service API in a mobile or web application should be as easy as depending on code running locally. We&rsquo;ve assembled a team of API, infrastructure and developer experience experts to build tools to support the modern application development lifecycle.",
+			"details": "Runscope was started with the idea that depending on a web service API in a mobile or web application should be as easy as depending on code running locally. We&rsquo;ve assembled a team of API, infrastructure and developer experience experts to build tools to support the modern application development lifecycle.",
+			"website": "https://www.runscope.com/",
+			"reference": "http://blog.runscope.com/posts/new-import-feature-support-for-swagger-postman",
+			"twitter": "https://twitter.com/Runscope",
+			"github": "https://github.com/Runscope",
+			"apisjson": "",
+			"blog": "http://blog.runscope.com/",
+			"blogrss": "http://blog.runscope.com/posts?format=rss",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/runscope-logo.png",
+			"logo_width": "250",
+			"screenshot": null,
+			"tags": "API Integration,API Operations,Monitoring,Operations,Testing"
 		},
 		{
 			"id": "18608",
