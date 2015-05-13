@@ -14,7 +14,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/AngularJS_logo.svg.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": ""
+			"tags": "Single Page Applications,SPA"
 		},
 		{
 			"id": "18661",
@@ -30,7 +30,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apache-ant.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": ""
+			"tags": "Apache,Open source"
 		},
 		{
 			"id": "18599",
@@ -46,7 +46,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apache-camel.jpeg",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "API Reciprocity,DSL"
+			"tags": "Apache,API Reciprocity,DSL"
 		},
 		{
 			"id": "18659",
@@ -62,7 +62,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/apache-maven.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": ""
+			"tags": "Apache"
 		},
 		{
 			"id": "18651",
@@ -78,7 +78,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Apache_Wink_Logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "Framework,Java"
+			"tags": "API-Deployment,Framework,Java"
 		},
 		{
 			"id": "18684",
@@ -94,7 +94,7 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/arangodb_logo2.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": ""
+			"tags": "Database,NoSQL"
 		},
 		{
 			"id": "18685",
@@ -142,13 +142,13 @@
 			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/ckan-logo.png",
 			"logo_width": "150",
 			"screenshot": null,
-			"tags": "City Open Tools"
+			"tags": "API Deployment,City Open Tools,Data"
 		},
 		{
 			"id": "18601",
 			"name": "Django REST",
-			"summary": false,
-			"details": "",
+			"summary": "Django REST framework is a powerful and flexible toolkit that makes it easy to build Web APIs.",
+			"details": "Django REST framework is a powerful and flexible toolkit that makes it easy to build Web APIs.",
 			"website": "http://www.django-rest-framework.org",
 			"reference": "http://github.com/avinash240/django-rest-framework-swagger/",
 			"twitter": "",
@@ -577,5 +577,5 @@
 			"tags": ""
 		}
 	],
-	"published": "03/30/2015"
+	"published": "05/13/2015"
 }
