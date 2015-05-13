@@ -79,7 +79,9 @@ function listCompanies()
             company = val['name'];             
             tags = val['tags'];	
             id = val['id'];
-            website = val['website'];	        		            		
+            website = val['website'];
+            
+            console.log(website);	        		            		
             
             if(website.length>0){ document.getElementById("home-logo-link-"+id).href=website; }               
             if(website.length>0){ document.getElementById("home-name-link-"+id).href=website; }              
