@@ -23,7 +23,7 @@ title: Tags
 		            slug = val['slug'];
 		            toolscount = val['tool-count'];
 		            console.log(name + ' - ' + toolscount);
-		            if(tag!='Github' && tag!='Github-Search' && tag!='Github Pages')
+		            if(tag!='Github' && tag!='GitHub' && tag!='Github-Search' && tag!='Github Pages')
 		            	{
 		            	html = '<span data-weight="' + toolscount + '"><a href="tags.html?tag=' + slug + '">' + name + '</a></span>';
 		            	$('#stack-cloud').append(html);             
