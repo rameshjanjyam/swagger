@@ -10,7 +10,11 @@ title: Tools
             <a href="{{website}}" id="home-logo-link-{{id}}"><img src="{{logo}}" width="75" align="left" style="padding: 15px;" /></a>
         </td>
         <td align="left" valign="top">
-            <a href="{{website}}" id="home-name-link-{{id}}" style="color: #000;"><strong>{{name}}</strong></a> (<a href="https://github.com/{{user}}">https://github.com/{{user}}</a>)<p>{{details}}</p>
+            <a href="{{website}}" id="home-name-link-{{id}}" style="color: #000;"><strong>{{name}}</strong></a> 
+             {% if user %}
+            	(<a href="https://github.com/{{user}}">{{user}}</a>)
+             {% endif %}
+            <p>{{details}}</p>
 	    </td>			
 	</tr> 
 </script>
