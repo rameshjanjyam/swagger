@@ -1038,6 +1038,23 @@
 			"tags": "Tax-Stack,Taxes,VAT"
 		},
 		{
+			"id": "18735",
+			"name": "The Open Cognition Project",
+			"summary": "OpenCog is a unique and ambitious open-source software project. Our aim is to create an open source framework for Artificial General Intelligence, intended to one day express general intelligence at the human level and beyond.",
+			"details": "OpenCog is a unique and ambitious open-source software project. Our aim is to create an open source framework for Artificial General Intelligence, intended to one day express general intelligence at the human level and beyond.",
+			"website": "http://wiki.opencog.org/w/The_Open_Cognition_Project",
+			"reference": "http://opencog.github.io/rest-api-documentation/",
+			"twitter": "",
+			"github": "https://github.com/opencog",
+			"apisjson": "",
+			"blog": "",
+			"blogrss": "",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/opencog-logo.png",
+			"logo_width": "150",
+			"screenshot": null,
+			"tags": "Artificial Intelligence,Artificial-Intelligence-Stack"
+		},
+		{
 			"id": "18643",
 			"name": "The Resumator",
 			"summary": "The Resumator designs the leading recruiting platform that enables you to swiftly find the best talent ideally suited to your business and position. With our innovative tools, scalable workflows and real-time insights, SMBs and fast-growing businesses can now hire with confidence. The right talent is hard to find, and while you may not hire every day, you want to grow every day in big and small wa",
