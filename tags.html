@@ -10,22 +10,22 @@ title: Tags
 			
 	$(document).ready(function(){
 		
-	    $.getJSON('data/companies.json', function(companies) { 
+	    $.getJSON('data/toolstools.json', function(tools) { 
 	    		
 		    $.getJSON('data/tags.json', function(data) {
 		    	
 		    	 tagcount = data['tags'].length;
-		    	 companycount = companies['company'].length;
-		    	 document.getElementById("summary-count").innerHTML = companycount + ' companies in ' + tagcount + ' arenas';
+		    	 toolscount = tools['tools'].length;
+		    	// document.getElementById("summary-count").innerHTML = toolscount + ' tools in ' + tagcount + ' arenas';
 		    
 		         $.each(data['tags'], function(key, val) {         	   
 		           
 		            tag = val['tag'];             
 		            name = val['name'];
 		            slug = val['slug'];
-		            companycount = val['company-count'];
+		            toolscount = val['tools-count'];
 		            
-		            html = '<span data-weight="' + companycount + '"><a href="stack.html?tag=' + slug + '">' + name + '</a></span>';
+		            html = '<span data-weight="' + toolscount + '"><a href="stack.html?tag=' + slug + '">' + name + '</a></span>';
 		            $('#stack-cloud').append(html);             
 		                            
 		            });
