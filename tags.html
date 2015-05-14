@@ -24,7 +24,7 @@ title: Tags
 		            name = val['name'];
 		            slug = val['slug'];
 		            toolscount = val['tools-count'];
-		            
+		            console.log(name + ' - ' + toolscount);
 		            html = '<span data-weight="' + toolscount + '"><a href="stack.html?tag=' + slug + '">' + name + '</a></span>';
 		            $('#stack-cloud').append(html);             
 		                            
