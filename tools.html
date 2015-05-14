@@ -24,12 +24,14 @@ title: Tools
 <p>These are some of the tools I'm tracking on across the space, when it comes to Swagger. I've broken them down by group, and if I've missed something<a href="https://github.com/kinlane/swagger/issues/new?title=Question%20About%20Your%20Swagger%20Research&amp;body="> submit a Github issue letting me know</a>.</p>
 
 <h2>Core Tooling</h2>
-<table id="toolListing" style="" width="100%" cellpadding="1" cellspacing="1" border="0"></table>
+<table id="coreTooling" style="" width="100%" cellpadding="1" cellspacing="1" border="0"></table>
+
+<h2>Documentation</h2>
+<table id="documentationTooling" style="" width="100%" cellpadding="1" cellspacing="1" border="0"></table>
 
 <script type="text/javascript">
-function listTools()
+function listTools($tag,$toolListing)
     {
-    $tag = "Swagger-Core";
     $.getJSON('data/tools.json', function(data) {
         toggle = 0;
          $.each(data['tools'], function(key, val) {
@@ -42,12 +44,13 @@ function listTools()
         		         	
 	            var template = $('#toolListingTemplate').html();
 	            var html = Mustache.to_html(template, val);
-	            $('#toolListing').append(html);
+	            $('#' + $toolListing).append(html);
 	            
 	            }                              
             });
         });
     } 
-listTools();
+listTools('Swagger-Core','coreTooling');
+listTools('Documentation','documentationTooling');
 </script>
 <!-- End List API Design companies--->
