@@ -579,6 +579,23 @@
 			"tags": "Containers,PaaS"
 		},
 		{
+			"id": "18699",
+			"name": "PAW",
+			"summary": "Paw is a full-featured and beautifully designed Mac app that makes interaction with REST services delightful. Either you are an API maker or consumer, Paw helps you build HTTP requests, inspect the server's response and even generate client code.",
+			"details": "Paw is a full-featured and beautifully designed Mac app that makes interaction with REST services delightful. Either you are an API maker or consumer, Paw helps you build HTTP requests, inspect the server's response and even generate client code.",
+			"website": "",
+			"reference": "https://github.com/luckymarmot/Paw-SwaggerImporter",
+			"twitter": "https://twitter.com/LuckyMarmot",
+			"github": "https://github.com/luckymarmot",
+			"apisjson": "",
+			"blog": "http://blog.luckymarmot.com/",
+			"blogrss": "http://blog.luckymarmot.com/rss",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/paw-http-client.png",
+			"logo_width": "150",
+			"screenshot": null,
+			"tags": "API Integration,HTTP Client"
+		},
+		{
 			"id": "18607",
 			"name": "Pivotal",
 			"summary": "Pivotal offers a modern approach to technology that organizations need to thrive in a new era of business innovation. Our solutions intersect cloud, big data and agile development, creating a framework that increases data leverage, accelerates application delivery, and decreases costs, while providing enterprises the speed and scale they need to compete.",
