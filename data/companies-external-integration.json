@@ -290,6 +290,23 @@
 			"tags": ""
 		},
 		{
+			"id": "18733",
+			"name": "FubuMVC",
+			"summary": "FubuMVC is a &ldquo;Front Controller&rdquo; pattern-style MVC framework designed for use in web applications built on ASP.NET.",
+			"details": "FubuMVC is a &ldquo;Front Controller&rdquo; pattern-style MVC framework designed for use in web applications built on ASP.NET.",
+			"website": "http://mvc.fubu-project.org/",
+			"reference": "https://github.com/KevM/fubumvc-swagger",
+			"twitter": "",
+			"github": "",
+			"apisjson": "",
+			"blog": "",
+			"blogrss": "",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/FubuMvc_Logo_small-300x94.png",
+			"logo_width": "150",
+			"screenshot": null,
+			"tags": ".NET,Framework"
+		},
+		{
 			"id": "18657",
 			"name": "Gradle",
 			"summary": "From command line to IDE to continuous integration, only one Enterprise build automation system to rule them all. Declare and execute all tasks necessary to compile, test, package and ship multi-language multi-platform multi-project and multi-channel software, SaaS and Mobile Apps.",
@@ -460,6 +477,23 @@
 			"tags": ""
 		},
 		{
+			"id": "18734",
+			"name": "OpenRasta",
+			"summary": "OpenRasta is an open-source .NET framework for building everything web, from web sites to RESTful APIs. Written from the ground-up with testing in mind, OpenRasta removes the faff from your code and lets you concentrate on writing clean, beautiful code. Proven in the real world, OpenRasta is the perfect choice for building scalable, high-performance, reliable web services.",
+			"details": "OpenRasta is an open-source .NET framework for building everything web, from web sites to RESTful APIs. Written from the ground-up with testing in mind, OpenRasta removes the faff from your code and lets you concentrate on writing clean, beautiful code. Proven in the real world, OpenRasta is the perfect choice for building scalable, high-performance, reliable web services.",
+			"website": "http://openrasta.org/",
+			"reference": "https://github.com/justeat/OpenRastaSwagger",
+			"twitter": "",
+			"github": "https://github.com/openrasta",
+			"apisjson": "",
+			"blog": "",
+			"blogrss": "",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/OpenRasta-Logo.png",
+			"logo_width": "150",
+			"screenshot": null,
+			"tags": ".NET,API Deployment,Framework"
+		},
+		{
 			"id": "18668",
 			"name": "Pyramid",
 			"summary": "The Pylons Project was founded by the people behind the Pylons web framework to develop web application framework technology in Python. Rather than focusing on a single web framework, the Pylons Project will develop a collection of related technologies. The first package is the Pyramid web framework.",
@@ -545,6 +579,23 @@
 			"tags": ""
 		},
 		{
+			"id": "18736",
+			"name": "Spray",
+			"summary": false,
+			"details": "",
+			"website": "http://spray.io/",
+			"reference": "https://github.com/gettyimages/spray-swagger",
+			"twitter": "",
+			"github": "",
+			"apisjson": "",
+			"blog": "",
+			"blogrss": "",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/spray-logo.png",
+			"logo_width": "150",
+			"screenshot": null,
+			"tags": "Framework,Scala"
+		},
+		{
 			"id": "18658",
 			"name": "Spring",
 			"summary": "Spring helps development teams everywhere build simple, portable, fast and flexible JVM-based systems and applications.",
@@ -611,6 +662,23 @@
 			"logo_width": "150",
 			"screenshot": null,
 			"tags": ""
+		},
+		{
+			"id": "4209",
+			"name": "Yeoman",
+			"summary": "Yeoman helps you kickstart new projects, prescribing best practices and tools to help you stay productive. To do so, we provide a generator ecosystem. A generator is basically a plugin that can be run with the `yo` command to scaffold complete projects or useful parts. Through our official Generators, we promote the Yeoman workflow. This workflow is a robust and opinionated client-side stack, comp",
+			"details": "Yeoman helps you kickstart new projects, prescribing best practices and tools to help you stay productive. To do so, we provide a generator ecosystem. A generator is basically a plugin that can be run with the `yo` command to scaffold complete projects or useful parts. Through our official Generators, we promote the Yeoman workflow. This workflow is a robust and opinionated client-side stack, comprising tools and frameworks that can help developers quickly build beautiful web applications. We take care of providing everything needed to get started without any of the normal headaches associated with a manual setup.",
+			"website": "http://yeoman.io/",
+			"reference": "https://github.com/krakenjs/generator-swaggerize",
+			"twitter": "https://twitter.com/yeoman",
+			"github": "https://github.com/yeoman",
+			"apisjson": "",
+			"blog": "http://yeoman.io/blog/",
+			"blogrss": "http://yeoman.io/blog/atom.xml",
+			"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/yeoman-logo.png",
+			"logo_width": "150",
+			"screenshot": null,
+			"tags": "Single Page Applications,Web Frameworks"
 		}
 	],
 	"published": "05/13/2015"
