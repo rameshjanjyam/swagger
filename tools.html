@@ -50,6 +50,7 @@ function listTools($tag,$toolListing)
         toggle = 0;
          $.each(data['tools'], function(key, val) {
          	
+         	$id = val['id'];
          	$tags = val['tags'];
 			$user = val['user'];
 			
@@ -63,7 +64,7 @@ function listTools($tag,$toolListing)
 	            
 	            if($user!='')
 	            	{
-	            	document.getElementById("home-user-link-"+id).style.display='';	
+	            	document.getElementById("home-user-link-"+$id).style.display='';	
 	            	}
 	            
 	            }                              
