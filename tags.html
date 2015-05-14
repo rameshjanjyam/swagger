@@ -3,7 +3,7 @@ layout: page
 title: Tags
 ---
 
-<div align="center" id="summary-count" style="font-size: 18px; font-weight: bold; padding-top: 25px; padding-bottom: 25px;"></div>
+<div align="center" id="summary-count" style="font-size: 18px; font-weight: bold; padding-top: 1px; padding-bottom: 25px; border: 1px solid #000;"></div>
 <div id="stack-cloud" class="wordcloud"></div>	
 
 <script type="text/javascript">
@@ -24,7 +24,7 @@ title: Tags
 		            name = val['name'];
 		            slug = val['slug'];
 		            toolscount = val['tool-count'];
-		            console.log(name + ' - ' + toolscount);
+		            //console.log(name + ' - ' + toolscount);
 		            html = '<span data-weight="' + toolscount + '"><a href="stack.html?tag=' + slug + '">' + name + '</a></span>';
 		            $('#stack-cloud').append(html);             
 		                            
