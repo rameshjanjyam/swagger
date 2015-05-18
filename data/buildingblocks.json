@@ -1,14 +1,14 @@
 {
 	"buildingblocks": [
 		{
-			"id": "987",
-			"name": "Converter",
-			"summary": "The conversion of an API definition from one format into another.",
-			"details": "The conversion of an API definition from one format into another.",
-			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-conversion.png",
-			"width": "100",
+			"id": "1000",
+			"name": "Specification",
+			"summary": "The root specification for the API definition format, providing a base set of rules for all services and tools that employ the spec.",
+			"details": "The root specification for the API definition format, providing a base set of rules for all services and tools that employ the spec.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-schema.png",
+			"width": "1",
 			"tags": "",
-			"category": "Converter",
+			"category": "Specification",
 			"categoryslug": "api-definition"
 		},
 		{
@@ -34,6 +34,17 @@
 			"categoryslug": "api-definition"
 		},
 		{
+			"id": "991",
+			"name": "Validator",
+			"summary": "Validates an API definition against its formal specification and schema, producing a valid or invalid response, with as much detail as possible.",
+			"details": "Validates an API definition against its formal specification and schema, producing a valid or invalid response, with as much detail as possible.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-valid.png",
+			"width": "100",
+			"tags": "",
+			"category": "Validator",
+			"categoryslug": "api-definition"
+		},
+		{
 			"id": "990",
 			"name": "Schema",
 			"summary": "Produces a specific schema, from an existing template, in a particular API definition format.",
@@ -45,14 +56,36 @@
 			"categoryslug": "api-definition"
 		},
 		{
-			"id": "991",
-			"name": "Validator",
-			"summary": "Validates an API definition against its formal specification and schema, producing a valid or invalid response, with as much detail as possible.",
-			"details": "Validates an API definition against its formal specification and schema, producing a valid or invalid response, with as much detail as possible.",
-			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-valid.png",
+			"id": "987",
+			"name": "Converter",
+			"summary": "The conversion of an API definition from one format into another.",
+			"details": "The conversion of an API definition from one format into another.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-conversion.png",
 			"width": "100",
 			"tags": "",
-			"category": "Validator",
+			"category": "Converter",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "1008",
+			"name": "Database",
+			"summary": "Tooling that generates an API definition format from a database connection, allowing for API integration with common database formats.",
+			"details": "Tooling that generates an API definition format from a database connection, allowing for API integration with common database formats.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-database-new.png",
+			"width": "100",
+			"tags": "",
+			"category": "Database",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "1007",
+			"name": "Mock",
+			"summary": "Generating a mock interface for an API based upon the definition provided, allowing for testing, and playing with a copy of the API that is not for production.",
+			"details": "Generating a mock interface for an API based upon the definition provided, allowing for testing, and playing with a copy of the API that is not for production.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-mock-interface.png",
+			"width": "100",
+			"tags": "",
+			"category": "Mock",
 			"categoryslug": "api-definition"
 		},
 		{
@@ -78,6 +111,17 @@
 			"categoryslug": "api-definition"
 		},
 		{
+			"id": "1006",
+			"name": "Single Page Application",
+			"summary": "Generating a single page applicaiton in a specific framework, derieved from an API definition, either as documentation for API, or as functional app interactive with API itself.",
+			"details": "Generating a single page applicaiton in a specific framework, derieved from an API definition, either as documentation for API, or as functional app interactive with API itself.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-single-page-apps.png",
+			"width": "100",
+			"tags": "",
+			"category": "Single Page Application",
+			"categoryslug": "api-definition"
+		},
+		{
 			"id": "994",
 			"name": "Command-Line",
 			"summary": "The usage of machine readable API definitions at the command line.",
@@ -97,6 +141,28 @@
 			"width": "100",
 			"tags": "",
 			"category": "Powershell",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "998",
+			"name": "Testing",
+			"summary": "Generating, providing, and configuring API testing using machine readable API definition formats.",
+			"details": "Generating, providing, and configuring API testing using machine readable API definition formats.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-authentication-test.png",
+			"width": "100",
+			"tags": "",
+			"category": "Testing",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "1009",
+			"name": "Monitoring",
+			"summary": "Setting up of API monitors to keep track of API operations over scheduled period of time using an API definition format.",
+			"details": "Setting up of API monitors to keep track of API operations over scheduled period of time using an API definition format.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-heart-monitor.png",
+			"width": "100",
+			"tags": "",
+			"category": "Monitoring",
 			"categoryslug": "api-definition"
 		},
 		{
@@ -122,39 +188,6 @@
 			"categoryslug": "api-definition"
 		},
 		{
-			"id": "998",
-			"name": "Testing",
-			"summary": "Generating, providing, and configuring API testing using machine readable API definition formats.",
-			"details": "Generating, providing, and configuring API testing using machine readable API definition formats.",
-			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-authentication-test.png",
-			"width": "100",
-			"tags": "",
-			"category": "Testing",
-			"categoryslug": "api-definition"
-		},
-		{
-			"id": "999",
-			"name": "Visualization",
-			"summary": "Generating a visualization from the meta data, or resources made available via a machine readable API definition.",
-			"details": "Generating a visualization from the meta data, or resources made available via a machine readable API definition.",
-			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-visualization.png",
-			"width": "100",
-			"tags": "",
-			"category": "Visualization",
-			"categoryslug": "api-definition"
-		},
-		{
-			"id": "1000",
-			"name": "Specification",
-			"summary": "The root specification for the API definition format, providing a base set of rules for all services and tools that employ the spec.",
-			"details": "The root specification for the API definition format, providing a base set of rules for all services and tools that employ the spec.",
-			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-schema.png",
-			"width": "1",
-			"tags": "",
-			"category": "Specification",
-			"categoryslug": "api-definition"
-		},
-		{
 			"id": "1001",
 			"name": "Editors",
 			"summary": "API definition editor, allowing for the creation, import, and export of API definition formats, providing a simple, IDE like API editing experience.",
@@ -166,17 +199,6 @@
 			"categoryslug": "api-definition"
 		},
 		{
-			"id": "1002",
-			"name": "IDE Plugin",
-			"summary": "Providng integration with existing integrated development environments (IDE), giving developers API discovery, documentation, and integration tooling right in the IDE.",
-			"details": "Providng integration with existing integrated development environments (IDE), giving developers API discovery, documentation, and integration tooling right in the IDE.",
-			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-editor.png",
-			"width": "100",
-			"tags": "",
-			"category": "IDE Plugin",
-			"categoryslug": "api-definition"
-		},
-		{
 			"id": "1003",
 			"name": "Documentation",
 			"summary": "Generation of static, or JavaScript interactive documentation from the API definition, helping developers understand what an API does.",
@@ -185,6 +207,17 @@
 			"width": "100",
 			"tags": "",
 			"category": "Documentation",
+			"categoryslug": "api-definition"
+		},
+		{
+			"id": "1002",
+			"name": "IDE Plugin",
+			"summary": "Providng integration with existing integrated development environments (IDE), giving developers API discovery, documentation, and integration tooling right in the IDE.",
+			"details": "Providng integration with existing integrated development environments (IDE), giving developers API discovery, documentation, and integration tooling right in the IDE.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-editor.png",
+			"width": "100",
+			"tags": "",
+			"category": "IDE Plugin",
 			"categoryslug": "api-definition"
 		},
 		{
@@ -210,47 +243,14 @@
 			"categoryslug": "api-definition"
 		},
 		{
-			"id": "1006",
-			"name": "Single Page Application",
-			"summary": "Generating a single page applicaiton in a specific framework, derieved from an API definition, either as documentation for API, or as functional app interactive with API itself.",
-			"details": "Generating a single page applicaiton in a specific framework, derieved from an API definition, either as documentation for API, or as functional app interactive with API itself.",
-			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-single-page-apps.png",
+			"id": "999",
+			"name": "Visualization",
+			"summary": "Generating a visualization from the meta data, or resources made available via a machine readable API definition.",
+			"details": "Generating a visualization from the meta data, or resources made available via a machine readable API definition.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-visualization.png",
 			"width": "100",
 			"tags": "",
-			"category": "Single Page Application",
-			"categoryslug": "api-definition"
-		},
-		{
-			"id": "1007",
-			"name": "Mock",
-			"summary": "Generating a mock interface for an API based upon the definition provided, allowing for testing, and playing with a copy of the API that is not for production.",
-			"details": "Generating a mock interface for an API based upon the definition provided, allowing for testing, and playing with a copy of the API that is not for production.",
-			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-mock-interface.png",
-			"width": "100",
-			"tags": "",
-			"category": "Mock",
-			"categoryslug": "api-definition"
-		},
-		{
-			"id": "1008",
-			"name": "Database",
-			"summary": "Tooling that generates an API definition format from a database connection, allowing for API integration with common database formats.",
-			"details": "Tooling that generates an API definition format from a database connection, allowing for API integration with common database formats.",
-			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-database-new.png",
-			"width": "100",
-			"tags": "",
-			"category": "Database",
-			"categoryslug": "api-definition"
-		},
-		{
-			"id": "1009",
-			"name": "Monitoring",
-			"summary": "Setting up of API monitors to keep track of API operations over scheduled period of time using an API definition format.",
-			"details": "Setting up of API monitors to keep track of API operations over scheduled period of time using an API definition format.",
-			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/building-blocks/bw-heart-monitor.png",
-			"width": "100",
-			"tags": "",
-			"category": "Monitoring",
+			"category": "Visualization",
 			"categoryslug": "api-definition"
 		}
 	],
