@@ -172,7 +172,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerInfoTitle', 
-							x: 275, 
+							x: 300, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -264,7 +264,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerHost', 
-							x: 350, 
+							x: 375, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -287,7 +287,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerBasePath', 
-							x: 190, 
+							x: 195, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -310,7 +310,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerScheme', 
-							x: 150, 
+							x: 160, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -402,7 +402,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerPath2', 
-							x: 235, 
+							x: 250, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -425,7 +425,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerPath3', 
-							x: 230, 
+							x: 250, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -448,7 +448,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerPath4', 
-							x: 205, 
+							x: 215, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -471,7 +471,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerPath5', 
-							x: 200, 
+							x: 215, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -494,7 +494,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerPath6', 
-							x: 275, 
+							x: 290, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -540,7 +540,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerPath8', 
-							x: 285, 
+							x: 295, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -563,7 +563,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerPath9', 
-							x: 255, 
+							x: 275, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -586,7 +586,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerPath10', 
-							x: 200, 
+							x: 215, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -609,7 +609,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerPath11', 
-							x: 210, 
+							x: 225, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -632,7 +632,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerPath12', 
-							x: 240, 
+							x: 255, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -816,7 +816,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerPathVerbOperationId', 
-							x: 300, 
+							x: 325, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -1161,7 +1161,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerDefinitionProperties', 
-							x: 215, 
+							x: 225, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -1276,7 +1276,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerDefinitionRefResponse', 
-							x: 405, 
+							x: 430, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -1345,7 +1345,7 @@
 						focus: 1,
 						position: { 
 							container: '#SwaggerSecurityDefinitionsAuth', 
-							x: 300, 
+							x: 320, 
 							y: -13,
 							width: 400, 
 							arrow: 'lt' 
@@ -1364,21 +1364,20 @@
 					{
 						title: 'Swagger 2.0 Walkthrough',
 						html:'Thank You!.',
-						buttons: { Cancel: 0, Next: 0 },
+						buttons: { Cancel: 0, Next: 1 },
 						focus: 1,
 						position: { 
 							container: '#SwaggerWalkThrough', 
-							x: 100, 
-							y: 50,
-							width: 400, 
-							arrow: 'lt' 
+							x: 175, 
+							y: 25,
+							width: 400
 						},
 						submit:function(e,v,m,f){ 
-							if(v == -1){
+							if(v == 1){
 								e.preventDefault();
-								$.prompt.prevState();
+								$.prompt.nextState();
 							}
-						}	
+						}
 					}																							
 				];
 
