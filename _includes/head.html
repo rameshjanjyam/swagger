@@ -90,9 +90,14 @@
 							arrow: 'lt' 
 						},
 						submit:function(e,v,m,f){ 
-							$.prompt.prevState();
-							e.preventDefault();
-							$.prompt.nextState();
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
 						}
 					},
 					{
@@ -107,16 +112,21 @@
 							width: 300, 
 							arrow: 'lt'
 						},
-						submit:function(e,v,m,f){ 
-							$.prompt.prevState();
-							e.preventDefault();
-							$.prompt.nextState();
+							submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
 						}
 					},	
 					{
 						title: 'API Description',
 						html:'A description of the API.',
-						buttons: { Cancel: 0, Next: 1 },
+						buttons: { Back: -1, Exit: 0, Next: 1 },
 						focus: 1,
 						position: { 
 							container: '#SwaggerInfoDescription', 
@@ -126,12 +136,15 @@
 							arrow: 'lt' 
 						},
 						submit:function(e,v,m,f){ 
-							if(v == 1){
+							if(v == -1){
+								e.preventDefault();
 								$.prompt.prevState();
+							}
+							if(v == 1){
 								e.preventDefault();
 								$.prompt.nextState();
 							}
-						}					
+						}				
 					},	
 					{
 						title: 'API Version',
