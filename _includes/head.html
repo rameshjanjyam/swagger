@@ -8,7 +8,16 @@
     {% if page.title %}{{ page.title }} &middot; {% endif %}
     {{ site.tagline }}
   </title>
-
+  
+  {% if page.title == 'Documentation' %}
+	  <link rel="stylesheet" href="https://s3.amazonaws.com/kinlane-productions/css/swagger-typography.css">
+	  <link rel="stylesheet" href="https://s3.amazonaws.com/kinlane-productions/css/swagger-reset.css">
+	  <link rel="stylesheet" href="https://s3.amazonaws.com/kinlane-productions/css/swagger.css">      
+	  <link rel="stylesheet" href="https://s3.amazonaws.com/kinlane-productions/css/hyde-with-swagger.css">
+  {% else %}
+  	  <link rel="stylesheet" href="https://s3.amazonaws.com/kinlane-productions/css/hyde-with-swagger.css">
+  {% endif %}
+  
   <link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/kinlane-productions/css/jquery-impromptu.css" /> 
     
   <link rel="stylesheet" href="https://s3.amazonaws.com/kinlane-productions/css/syntax.css">
