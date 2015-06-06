@@ -80,7 +80,7 @@
 					{
 						title: 'Swagger 2.0',
 						html:'The version of the Swagger specification being used.',
-						buttons: { Cancel: 0, Next: 1 },
+						buttons: { Back: -1, Exit: 0, Next: 1 },
 						focus: 1,
 						position: { 
 							container: '#Swagger20', 
@@ -91,6 +91,7 @@
 						},
 						submit:function(e,v,m,f){ 
 							if(v == 1){
+								$.prompt.prevState();
 								e.preventDefault();
 								$.prompt.nextState();
 							}
@@ -109,11 +110,8 @@
 							arrow: 'lt'
 						},
 						submit:function(e,v,m,f){ 
-							if(v == -1){
-								e.preventDefault();
-								$.prompt.prevState();
-							}
 							if(v == 1){
+								$.prompt.prevState();
 								e.preventDefault();
 								$.prompt.nextState();
 							}
@@ -132,15 +130,12 @@
 							arrow: 'lt' 
 						},
 						submit:function(e,v,m,f){ 
-							if(v == -1){
-								e.preventDefault();
-								$.prompt.prevState();
-							}
 							if(v == 1){
+								$.prompt.prevState();
 								e.preventDefault();
 								$.prompt.nextState();
 							}
-						}						
+						}					
 					},	
 					{
 						title: 'API Version',
