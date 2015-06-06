@@ -1,29 +1,1435 @@
 <!DOCTYPE html>
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-
+	
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  
   <title>
     {% if page.title %}{{ page.title }} &middot; {% endif %}
     {{ site.tagline }}
   </title>
+  
+  {% if page.title == 'Documentation' %}
+	  <link rel="stylesheet" href="https://s3.amazonaws.com/kinlane-productions/css/swagger-typography.css">
+	  <link rel="stylesheet" href="https://s3.amazonaws.com/kinlane-productions/css/swagger-reset.css">
+	  <link rel="stylesheet" href="https://s3.amazonaws.com/kinlane-productions/css/swagger.css">      
+	  <link rel="stylesheet" href="https://s3.amazonaws.com/kinlane-productions/css/hyde-with-swagger.css">
+  {% else %}
+  	  <link rel="stylesheet" href="https://s3.amazonaws.com/kinlane-productions/css/hyde-with-swagger.css">
+  {% endif %}
+  
+  <link rel="stylesheet" href="https://s3.amazonaws.com/kinlane-productions/css/syntax.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700|Abril+Fatface">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/css/hyde.css">
-  <link rel="stylesheet" href="/css/syntax.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700|Abril+Fatface">
+  <link rel="stylesheet" media="all" type="text/css" href="https://s3.amazonaws.com/kinlane-productions/css/jquery-impromptu.css" />
+  
+  <!-- Icons -->
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-  	<!-- Icons -->
-  	<link rel="shortcut icon" type="image/x-icon" href="http://apievangelist.com/favicon.ico">
-	<link rel="icon" type="image/x-icon" href="http://apievangelist.com/favicon.ico">
+  <script type="text/javascript" src="/js/tiny_mce/tiny_mce.js"></script>
 
-  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> 
+   <script src="https://s3.amazonaws.com/kinlane-productions/js/github.js" type="text/javascript"></script>
+  <script src="https://s3.amazonaws.com/kinlane-productions/js/shred.bundle.js" type="text/javascript"></script>
+  <script src='https://s3.amazonaws.com/kinlane-productions/js/jquery-1.8.0.min.js' type='text/javascript'></script>
+  <script src='https://s3.amazonaws.com/kinlane-productions/js/jquery-ui.js' type='text/javascript'></script>
+  <script src='https://s3.amazonaws.com/kinlane-productions/js/jquery.slideto.min.js' type='text/javascript'></script>
+  <script src='https://s3.amazonaws.com/kinlane-productions/js/jquery.wiggle.min.js' type='text/javascript'></script>
+  <script src='https://s3.amazonaws.com/kinlane-productions/js/jquery.ba-bbq.min.js' type='text/javascript'></script>
+  <script src='https://s3.amazonaws.com/kinlane-productions/js/handlebars-2.0.0.js' type='text/javascript'></script>
+  <script src='https://s3.amazonaws.com/kinlane-productions/js/underscore-min.js' type='text/javascript'></script>
+  <script src='https://s3.amazonaws.com/kinlane-productions/js/backbone-min.js' type='text/javascript'></script>
+  <script src='https://s3.amazonaws.com/kinlane-productions/js/swagger-client.js' type='text/javascript'></script>
+  <script src='https://s3.amazonaws.com/kinlane-productions/js/swagger-ui.js' type='text/javascript'></script>
+  <script src='https://s3.amazonaws.com/kinlane-productions/js/highlight.7.3.pack.js' type='text/javascript'></script>
+  <script src='https://s3.amazonaws.com/kinlane-productions/js/marked.js' type='text/javascript'></script>
+
+  <script src="https://s3.amazonaws.com/kinlane-productions/js/oauth.js" type="text/javascript"></script>
+  
   <script src="https://s3.amazonaws.com/kinlane-productions/js/mustache.js" type="text/javascript"></script>
-  <script src="https://s3.amazonaws.com/kinlane-productions/js/jquery.awesomeCloud-0.2.min.js" type="text/javascript"></script> 
-  <script src="https://s3.amazonaws.com/kinlane-productions/js/utilities.js" type="text/javascript"></script>
-   
+  <script src="https://s3.amazonaws.com/kinlane-productions/js/utilities.js" type="text/javascript"></script>    
+  
+  <script src="https://s3.amazonaws.com/kinlane-productions/js/jquery-impromptu.js"></script>
+
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/blog.xml">
   
+  {% if page.title == 'Swagger Walk-Through' %}
+  
+		<script type="text/javascript">
+		
+			$(document).ready(function(){
+
+				var tourdemo = [
+					{
+						title: 'Swagger 2.0 Walkthrough',
+						html:'This will walk you through each of the elements of a Swagger 2.0 file. I suggest using your enter key, rather than mouse for triggering next step.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#Swagger20', 
+							x: 500, 
+							y: 100,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}
+					},				
+					{
+						title: 'Swagger 2.0',
+						html:'The version of the Swagger specification being used.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#Swagger20', 
+							x: 160, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}
+					},
+					{
+						title: 'Info About API',
+						html:'Some info about the API.',
+						buttons: { Back: -1, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerInfo', 
+							x: 125, 
+							y: -13, 
+							width: 400, 
+							arrow: 'lt'
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}
+					},	
+					{
+						title: 'API Description',
+						html:'A description of the API.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerInfoDescription', 
+							x: 450, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'API Version',
+						html:'The version of the API.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerInfoVersion', 
+							x: 215, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'API Title',
+						html:'Theh title for the API.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerInfoTitle', 
+							x: 275, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'API Terms of Service',
+						html:'The terms of service for the API.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerInfoTermsofService', 
+							x: 425, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}					
+					},	
+					{
+						title: 'API Contact',
+						html:'A contact for the API.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerInfoContact', 
+							x: 175, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}					
+					},	
+					{
+						title: 'API License',
+						html:'A license for the API.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerInfoLicense', 
+							x: 175, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}							
+					},	
+					{
+						title: 'API Host',
+						html:'The host for the API.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerHost', 
+							x: 350, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}							
+					},	
+					{
+						title: 'API Base Path',
+						html:'The base path for the API.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerBasePath', 
+							x: 190, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}							
+					},	
+					{
+						title: 'API Schemes',
+						html:'Schemes for the API (http or https).',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerScheme', 
+							x: 150, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Schemes + Host + BasePath',
+						html:'All three of these make up a full base url for the API.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerBaseURL', 
+							x: 175, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Paths',
+						html:'We can define as many paths as we want, this has 12 uniqiue paths...',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath', 
+							x: 175, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Paths (1)',
+						html:'We can define as many paths as we want, this has 12 uniqiue paths...',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath1', 
+							x: 175, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Paths (2)',
+						html:'We can define as many paths as we want, this has 12 uniqiue paths...',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath2', 
+							x: 235, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Paths (3)',
+						html:'We can define as many paths as we want, this has 12 uniqiue paths...',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath3', 
+							x: 230, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Paths (4)',
+						html:'We can define as many paths as we want, this has 12 uniqiue paths...',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath4', 
+							x: 205, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Paths (5)',
+						html:'We can define as many paths as we want, this has 12 uniqiue paths...',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath5', 
+							x: 200, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Paths (6)',
+						html:'We can define as many paths as we want, this has 12 uniqiue paths...',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath6', 
+							x: 275, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Paths (7)',
+						html:'We can define as many paths as we want, this has 12 uniqiue paths...',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath7', 
+							x: 175, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Paths (8)',
+						html:'We can define as many paths as we want, this has 12 uniqiue paths...',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath8', 
+							x: 285, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Paths (9)',
+						html:'We can define as many paths as we want, this has 12 uniqiue paths...',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath9', 
+							x: 255, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Paths (10)',
+						html:'We can define as many paths as we want, this has 12 uniqiue paths...',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath10', 
+							x: 200, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Paths (11)',
+						html:'We can define as many paths as we want, this has 12 uniqiue paths...',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath11', 
+							x: 210, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Paths (12)',
+						html:'We can define as many paths as we want, this has 12 uniqiue paths...',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath12', 
+							x: 240, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Path Verbs - GET',
+						html:'Define the verbs for each path -- using our GET.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath2GET', 
+							x: 210, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Path Verbs - POST',
+						html:'Define the verbs for each path -- using our POST.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath2POST', 
+							x: 210, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Path Verbs - PUT',
+						html:'Define the verbs for each path -- using our PUT.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath2PUT', 
+							x: 210, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Path Verbs - DELETE',
+						html:'Define the verbs for each path -- using our DELETE.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPath2DELETE', 
+							x: 210, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Endpoint - Tags',
+						html:'Provide tags for each API path endpoint, for labeling, and organizing.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPathVerbTags', 
+							x: 230, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Endpoint - Summary',
+						html:'Provide a summary for each API path endpoint.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPathVerbSummary', 
+							x: 415, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Endpoint - Description',
+						html:'Provide a description for each API path endpoint.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPathVerbDescription', 
+							x: 275, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Endpoint - Operation ID',
+						html:'Provide an operation id for each API path endpoint.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPathVerbOperationId', 
+							x: 300, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Endpoint - Consumes',
+						html:'Provide media types that each API path endpoint consumes.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPathVerbConsumes', 
+							x: 275, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Endpoint - Produces',
+						html:'Provide media types that each API path endpoint produces.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPathVerbProduces', 
+							x: 275, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Endpoint - Parameters',
+						html:'Provide parameters for each API path endpoint.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPathVerbParameters', 
+							x: 285, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Endpoint - Parameters - In',
+						html:'Provide where parameters are located (ie. query, header, body) for each API path endpoint.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPathVerbParametersIn', 
+							x: 285, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Endpoint - Parameters - Name',
+						html:'Provide a name of parameters for each API path endpoint.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPathVerbParametersName', 
+							x: 285, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Endpoint - Parameters - Description',
+						html:'Provide description of each parameter for each API path endpoint.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPathVerbParametersDescription', 
+							x: 575, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Endpoint - Parameters - Required',
+						html:'Provide whether a parameter is required or not for each API path endpoint.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPathVerbParametersRequired', 
+							x: 290, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Endpoint - Responses',
+						html:'Provide structured responses, with status codes for each API path endpoint.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerPathVerbResponses', 
+							x: 300, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Definitions',
+						html:'Provide definitions for each object used across API requests and responses.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerDefinitions', 
+							x: 180, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},		
+					{
+						title: 'Definitions - User',
+						html:'For defining the user object.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerDefinitionsUser', 
+							x: 180, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},
+					{
+						title: 'Definitions - Category',
+						html:'For defining the category object.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerDefinitionsCategory', 
+							x: 200, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},
+					{
+						title: 'Definitions - Pet',
+						html:'For defining the pet object.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerDefinitionsPet', 
+							x: 180, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},
+					{
+						title: 'Definitions - Tag',
+						html:'For defining the tag object.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerDefinitionsTag', 
+							x: 180, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},
+					{
+						title: 'Definitions - Order',
+						html:'For defining the order object.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerDefinitionsOrder', 
+							x: 185, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},
+					{
+						title: 'Definitions - Properties',
+						html:'For each definition you can define properties.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerDefinitionProperties', 
+							x: 215, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Definitions - Properties - Type',
+						html:'For each definition properties you can assign a type.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerDefinitionPropertiesType', 
+							x: 300, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},
+					{
+						title: 'Definitions - Format',
+						html:'For each definition properties you can assign a format.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerDefinitionPropertiesFormat', 
+							x: 300, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},
+					{
+						title: 'Definitions - Description',
+						html:'For each definition properties you can assign a description.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerDefinitionPropertiesDescription', 
+							x: 350, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Definitions - Requests',
+						html:'Each definition can be referenced as part of request parameters, body, etc.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerDefinitionRefBody', 
+							x: 405, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},
+					{
+						title: 'Definitions - Responses',
+						html:'Each definition can be referenced as part of responses.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerDefinitionRefResponse', 
+							x: 405, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Security',
+						html:'Security settings can be defined for the API',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerSecurityDefinitions', 
+							x: 280, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Security - Key',
+						html:'Security settings can then be referenced for each API path endpoint, applying keys.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerSecurityDefinitionsKey', 
+							x: 300, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}						
+					},	
+					{
+						title: 'Security - OAuth',
+						html:'Security settings can then be referenced for each API path endpoint, applying OAuth.',
+						buttons: { Cancel: 0, Next: 1 },
+						focus: 1,
+						position: { 
+							container: '#SwaggerSecurityDefinitionsAuth', 
+							x: 300, 
+							y: -13,
+							width: 400, 
+							arrow: 'lt' 
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+							if(v == 1){
+								e.preventDefault();
+								$.prompt.nextState();
+							}
+						}					
+					},
+					{
+						title: 'Swagger 2.0 Walkthrough',
+						html:'Thank You!.',
+						buttons: { Cancel: 0, Next: 0 },
+						focus: 1,
+						position: { 
+							container: '#Swagger20', 
+							x: 500, 
+							y: 100,
+							width: 300
+						},
+						submit:function(e,v,m,f){ 
+							if(v == -1){
+								e.preventDefault();
+								$.prompt.prevState();
+							}
+						}	
+					}																							
+				];
+
+				$.prompt(tourdemo);
+			
+				
+			});
+  {% endif %}
+  
+	
+	<style type="text/css">
+		.t1
+			{
+			padding-left: 25px;
+			}
+		.t2
+			{
+			padding-left: 50px;
+			}
+		.t3
+			{
+			padding-left: 75px;
+			}	
+		.t4
+			{
+			padding-left: 100px;
+			}	
+		.t5
+			{
+			padding-left: 125px;
+			}	
+		.t6
+			{
+			padding-left: 150px;
+			}
+		.t7
+			{
+			padding-left: 175px;
+			}
+		.t8
+			{
+			padding-left: 200px;
+			}
+		.t9
+			{
+			padding-left: 225px;
+			}																							
+	</style>
+
+  <link rel="stylesheet" media="all" type="text/css" href="https://s3.amazonaws.com/kinlane-productions/css/jquery-impromptu.css" />
+    
 </head>
